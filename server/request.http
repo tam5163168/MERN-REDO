@@ -1,0 +1,58 @@
+
+POST http://localhost:5000/api/auth/register 
+Content-Type: application/json
+
+{
+    "username": "tampq",
+    "password": "tampq123"
+}
+
+###
+
+POST http://localhost:5000/api/auth/login 
+Content-Type: application/json
+
+{
+    "username": "tampq",
+    "password": "tampq123"
+}
+
+###
+    
+POST http://localhost:5000/api/posts
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MTNhMGFiODJlYTliYzVhMjQ5NGYwMGYiLCJpYXQiOjE2MzE3MTg4NTgsImV4cCI6MTYzMTcyMjQ1OH0.2mKgT8D5kww7YJ5A8h9ePKN4qvopvK4RLnGqLGO12Zs
+
+{
+    "title": "React",
+    "description": "react",
+    "url": "react.com",
+    "status": "TO LEARN"
+}
+
+
+###
+
+GET http://localhost:5000/api/posts
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MTNhMGFiODJlYTliYzVhMjQ5NGYwMGYiLCJpYXQiOjE2MzEzNTM1MTIsImV4cCI6MTYzMTM1NzExMn0.M75i1A07sMZznmEQp-1Wks9yLUB9Ue5HnHjyUPamX8I
+
+
+###
+
+PUT http://localhost:5000/api/posts/613c70d6d6ff7ee7bfd3dfaa
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MTNhMGFiODJlYTliYzVhMjQ5NGYwMGYiLCJpYXQiOjE2MzEzNTM1MTIsImV4cCI6MTYzMTM1NzExMn0.M75i1A07sMZznmEQp-1Wks9yLUB9Ue5HnHjyUPamX8I
+
+
+{
+    "title": "Vue",
+    "description": "Vueeee",
+    "url": "vue.org",
+    "status": "Learning"
+}
+
+###
+
+DELETE http://localhost:5000/api/posts/613c70d6d6ff7ee7bfd3dfaa
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MTNhMGFiODJlYTliYzVhMjQ5NGYwMGYiLCJpYXQiOjE2MzEzNTM1MTIsImV4cCI6MTYzMTM1NzExMn0.M75i1A07sMZznmEQp-1Wks9yLUB9Ue5HnHjyUPamX8I
